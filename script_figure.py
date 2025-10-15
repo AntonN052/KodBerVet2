@@ -20,8 +20,6 @@ plt.ylabel('Distance [km]',fontsize=18)
 plt.title('Speed [km/h]',fontsize=18)
 fig.colorbar(cs)
 ### 1B ###
-# ADD PLOTTING OF TRAJECTORIES HERE 
-plt.savefig("speed-data-nyc.eps", bbox_inches='tight')
 
 plt.plot(route_nyc.plotted_rumi_x, route_nyc.plotted_rumi_y, color = "white", lw = 5)
 plt.plot(route_nyc.plotted_mira_x, route_nyc.plotted_mira_y, color = "black", lw = 5)
@@ -30,3 +28,5 @@ plt.annotate(text = "Rumi",color = "white",xy=(12, 40), size = 30)
 plt.annotate(text = "Mira",color = "black",xy=(20, 40), size = 30)
 
 plt.show()
+
+plt.savefig("speed-data-nyc.eps", bbox_inches='tight')
